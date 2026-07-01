@@ -22,6 +22,8 @@ SessionLocal = sessionmaker(autocommit=False,
                             bind=engine
                             )
 
+
+# Dependency
 def get_db():
     """
     FastAPI dependency that provides a transactional database session.
